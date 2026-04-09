@@ -2,12 +2,14 @@
   "name": "retail-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://yashosw10.github.io/retail_app",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tensorflow/tfjs": "^4.22.0",
